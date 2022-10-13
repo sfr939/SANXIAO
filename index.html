@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
 
@@ -7,7 +8,7 @@
 
   <!--http://www.html5rocks.com/en/mobile/mobifying/-->
   <meta name="viewport"
-        content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1"/>
+    content="width=device-width,user-scalable=no,initial-scale=1, minimum-scale=1,maximum-scale=1" />
 
   <!--https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -15,19 +16,19 @@
   <meta name="format-detection" content="telephone=no">
 
   <!-- force webkit on 360 -->
-  <meta name="renderer" content="webkit"/>
-  <meta name="force-rendering" content="webkit"/>
+  <meta name="renderer" content="webkit" />
+  <meta name="force-rendering" content="webkit" />
   <!-- force edge on IE -->
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="msapplication-tap-highlight" content="no">
 
   <!-- force full screen on some browser -->
-  <meta name="full-screen" content="yes"/>
-  <meta name="x5-fullscreen" content="true"/>
-  <meta name="360-fullscreen" content="true"/>
-  
+  <meta name="full-screen" content="yes" />
+  <meta name="x5-fullscreen" content="true" />
+  <meta name="360-fullscreen" content="true" />
+
   <!-- force screen orientation on some browser -->
-  <meta name="screen-orientation" content="portrait"/>
+  <meta name="screen-orientation" content="portrait" />
   <meta name="x5-orientation" content="portrait">
 
   <!--fix fireball/issues/3568 -->
@@ -37,9 +38,10 @@
   <!--<link rel="apple-touch-icon" href=".png" />-->
   <!--<link rel="apple-touch-icon-precomposed" href=".png" />-->
 
-  <link rel="stylesheet" type="text/css" href="style-mobile.d85b7.css"/>
-  <link rel="icon" href="favicon.14a17.ico"/>
+  <link rel="stylesheet" type="text/css" href="style-mobile.d85b7.css" />
+  <link rel="icon" href="favicon.14a17.ico" />
 </head>
+
 <body>
   <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="0"></canvas>
   <div id="splash">
@@ -48,43 +50,84 @@
     </div>
   </div>
 
-<script src="src/settings.58792.js" charset="utf-8"></script>
+  <script src="src/settings.20aa7.js" charset="utf-8"></script>
+  <script src="vconsole.min.bac6b.js"></script>
+  <script src="main.77bd7.js" charset="utf-8"></script>
 
-<script src="main.3b506.js" charset="utf-8"></script>
-
-<script type="text/javascript">
-(function () {
-    // open web debugger console
-    if (typeof VConsole !== 'undefined') {
+  <script type="text/javascript">
+    (function () {
+      // open web debugger console
+      if (typeof VConsole !== 'undefined') {
         window.vConsole = new VConsole();
-    }
+      }
 
-    var debug = window._CCSettings.debug;
-    var splash = document.getElementById('splash');
-    splash.style.display = 'block';
+      var debug = window._CCSettings.debug;
+      var splash = document.getElementById('splash');
+      splash.style.display = 'block';
 
-    function loadScript (moduleName, cb) {
-      function scriptLoaded () {
+      function loadScript(moduleName, cb) {
+        function scriptLoaded() {
           document.body.removeChild(domScript);
           domScript.removeEventListener('load', scriptLoaded, false);
           cb && cb();
-      };
-      var domScript = document.createElement('script');
-      domScript.async = true;
-      domScript.src = moduleName;
-      domScript.addEventListener('load', scriptLoaded, false);
-      document.body.appendChild(domScript);
-    }
-
-    loadScript(debug ? 'cocos2d-js.js' : 'cocos2d-js-min.7ff39.js', function () {
-      if (CC_PHYSICS_BUILTIN || CC_PHYSICS_CANNON) {
-        loadScript(debug ? 'physics.js' : 'physics-min.941a2.js', window.boot);
+        };
+        var domScript = document.createElement('script');
+        domScript.async = true;
+        domScript.src = moduleName;
+        domScript.addEventListener('load', scriptLoaded, false);
+        document.body.appendChild(domScript);
       }
-      else {
-        window.boot();
+
+      loadScript(debug ? 'cocos2d-js.3193c.js' : 'cocos2d-js-min.js', function () {
+        if (CC_PHYSICS_BUILTIN || CC_PHYSICS_CANNON) {
+          loadScript(debug ? 'physics.js' : 'physics-min.js', window.boot);
+        }
+        else {
+          window.boot();
+        }
+      });
+    })();
+  </script>
+
+  <script type="text/javascript">
+    // H5 SDK 在线文档地址：http://developers.adnet.qq.com/doc/web/js_develop
+    // 全局命名空间申明TencentGDT对象
+    window.TencentGDT = window.TencentGDT || [];
+    console.error("全局命名空间申明TencentGDT对象");
+    
+    // 广告初始化
+    TencentGDT.push({
+      placement_id: '5064822516681213', // 广告位id
+      app_id: '1201028112', // appid
+      type: 'rewardVideo', // 广告类型
+      onComplete: function (res) {
+        if (res.code == 0) {
+            // 激励视频实例化，初始化完成后，可在任意地方进行实例化操作
+            var video = new TencentGDT.NATIVE.rewardVideoAd( function(res) {
+                // 激励视频回调参数
+                console.log(res);
+            });
+            // 激励视频加载方法
+            video.loadAd();
+            // 激励视频播放方法
+            video.showAd();
+        }
       }
     });
-})();
-</script>
+    console.error("广告初始化-TencentGDT.push");
+
+    // H5 SDK接入全局只需运行一次
+    (function () {
+      var doc = document,
+        h = doc.getElementsByTagName('head')[0],
+        s = doc.createElement('script');
+      s.async = true;
+      s.src = '//qzs.gdtimg.com/union/res/union_sdk/page/h5_sdk/i.js';
+      h && h.insertBefore(s, h.firstChild)
+      console.error("SDK接入全局只需运行一次");
+    })();
+  </script>
+
 </body>
+
 </html>

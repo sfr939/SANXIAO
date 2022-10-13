@@ -1,0 +1,153 @@
+
+MS_PF.png
+size: 1863,231
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+MS_0
+  rotate: true
+  xy: 413, 19
+  size: 209, 94
+  orig: 209, 94
+  offset: 0, 0
+  index: -1
+MS_1
+  rotate: true
+  xy: 870, 20
+  size: 208, 105
+  orig: 208, 105
+  offset: 0, 0
+  index: -1
+MS_10
+  rotate: 270
+  xy: 978, 22
+  size: 206, 89
+  orig: 206, 89
+  offset: 0, 0
+  index: -1
+MS_11
+  rotate: true
+  xy: 1567, 26
+  size: 203, 76
+  orig: 203, 76
+  offset: 0, 0
+  index: -1
+MS_12
+  rotate: true
+  xy: 221, 13
+  size: 215, 95
+  orig: 215, 95
+  offset: 0, 0
+  index: -1
+MS_13
+  rotate: 270
+  xy: 794, 8
+  size: 219, 90
+  orig: 219, 90
+  offset: 0, 0
+  index: -1
+MS_14
+  rotate: true
+  xy: 1156, 39
+  size: 190, 96
+  orig: 190, 96
+  offset: 0, 0
+  index: -1
+MS_15
+  rotate: 270
+  xy: 1489, 17
+  size: 211, 76
+  orig: 211, 76
+  offset: 0, 0
+  index: -1
+MS_16
+  rotate: true
+  xy: 1070, 12
+  size: 217, 83
+  orig: 217, 83
+  offset: 0, 0
+  index: -1
+MS_17
+  rotate: 270
+  xy: 688, 18
+  size: 209, 107
+  orig: 209, 107
+  offset: 0, 0
+  index: -1
+MS_18
+  rotate: false
+  xy: 4, 120
+  size: 213, 107
+  orig: 215, 109
+  offset: 1, 1
+  index: -1
+MS_19
+  rotate: false
+  xy: 4, 9
+  size: 213, 107
+  orig: 215, 109
+  offset: 1, 1
+  index: -1
+MS_2
+  rotate: true
+  xy: 314, 5
+  size: 223, 97
+  orig: 223, 97
+  offset: 0, 0
+  index: -1
+MS_20
+  rotate: true
+  xy: 1792, 86
+  size: 141, 67
+  orig: 141, 68
+  offset: 0, 1
+  index: -1
+MS_3
+  rotate: 270
+  xy: 510, 27
+  size: 201, 99
+  orig: 201, 99
+  offset: 0, 0
+  index: -1
+MS_4
+  rotate: true
+  xy: 1645, 19
+  size: 209, 79
+  orig: 209, 79
+  offset: 0, 0
+  index: -1
+MS_5
+  rotate: true
+  xy: 1333, 30
+  size: 199, 80
+  orig: 199, 80
+  offset: 0, 0
+  index: -1
+MS_6
+  rotate: 270
+  xy: 1416, 11
+  size: 216, 70
+  orig: 216, 70
+  offset: 0, 0
+  index: -1
+MS_7
+  rotate: 270
+  xy: 1727, 18
+  size: 210, 63
+  orig: 210, 63
+  offset: 0, 0
+  index: -1
+MS_8
+  rotate: 270
+  xy: 1254, 6
+  size: 221, 80
+  orig: 221, 80
+  offset: 0, 0
+  index: -1
+MS_9
+  rotate: true
+  xy: 585, 7
+  size: 206, 107
+  orig: 206, 107
+  offset: 0, 0
+  index: -1

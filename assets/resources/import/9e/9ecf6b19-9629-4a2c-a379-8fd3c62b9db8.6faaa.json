@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "ffWOLwRj5DeanYesj5nujt"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "传送带",
+      "rect": [
+        0,
+        0,
+        1100,
+        220
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        1100,
+        220
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]

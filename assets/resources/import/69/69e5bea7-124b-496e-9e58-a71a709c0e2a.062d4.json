@@ -1,0 +1,51 @@
+[
+  1,
+  [
+    "e0a+Pu3XFL6ae4/SJe8NaV"
+  ],
+  [
+    "_textureSetter"
+  ],
+  [
+    "cc.SpriteFrame"
+  ],
+  0,
+  [
+    {
+      "name": "MS_PF",
+      "rect": [
+        4,
+        6,
+        1855,
+        222
+      ],
+      "offset": [
+        0,
+        -1.5
+      ],
+      "originalSize": [
+        1863,
+        231
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  [
+    0
+  ],
+  0,
+  [
+    0
+  ],
+  [
+    0
+  ],
+  [
+    0
+  ]
+]
